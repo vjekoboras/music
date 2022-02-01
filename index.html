@@ -4,19 +4,152 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Music</title>
-	
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<title>Albums to listen to</title>
 	
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	
 	<style>
+		body{
+			background-color: #121212;
+			font-family: "Montserrat", sans-serif;
+		}
+		.flex-container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.albums > div{
+			width: 100%;
+			padding: 10px;
+			background-color: #181818;
+			cursor: pointer;
+			flex: 20%;
+			margin: 1%;
+		}
+		.albums > div:hover{
+			background-color: #282828;
+		}
+		.albums > div > a{
+			text-decoration: none;
+			color: white;
+			transition: 1s;
+			width: 100%;
+			background-color: #181818;
+		}
+		.albums > div > a > img{
+			width: 100%;
+		}
+		#album{
+			padding: 1%;
+		}
+		h1{
+			font-size: 25px;
+		}
+		h2{
+			font-size: 20px;
+		}
 		
+		@media screen and (max-width: 767px){
+			.flex-container{
+				display: flex
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+			.albums > div{
+				flex: 48%;
+				margin: 1%;
+			}
+		}
+		
+		/*za footer*/
+		body {
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		footer{
+			background-color: #121212;
+			width: 100%;
+			padding: 35px 0 25px 0;
+			font-size: 20px;
+			text-align: center;
+			flex: 0 0 50px;
+		}
+		footer > a{
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+			transition: 0.5s;
+		}
+		footer > a:hover{
+			opacity: 0.7;
+		}
 	</style>
 </head>
 <body>
+	<div class="flex-container albums">
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+	</div>
+	<div class="flex-container albums">
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+		<div id="album">
+			<a href="">
+				<img src="img/white.jpg" alt="Album" title="Album"/>
+				<h1>ALBUM NAME</h1>
+				<h2>Artist</h2>
+			</a>
+		</div>
+	</div>
 	
+	<footer>
+		<a href="">FAVORITI</a>
+	</footer>
 </body>
 </html>
